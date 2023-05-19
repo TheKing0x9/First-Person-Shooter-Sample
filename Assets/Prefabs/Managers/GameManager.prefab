@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1147010544024959899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147010544024959896}
+  - component: {fileID: 1147010544024959897}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1147010544024959896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147010544024959899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1147010544151127690}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147010544024959897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147010544024959899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8abc1c53fb94b4d815ac91add462de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameTime: 10
+  elapsedTime: 0
+  m_player: {fileID: 0}
+  m_experienceParent: {fileID: 0}
+  m_gameOverUI: {fileID: 0}
+  m_fpsCamera: {fileID: 0}
+  m_hudUI: {fileID: 0}
+  resetScoreEvent: {fileID: 11400000, guid: 04610f60a9baa0b438d99b1c63f33bc7, type: 2}
+  playerDeadEvent: {fileID: 11400000, guid: b3fde4015050e5c45aadd7a275d5adb8, type: 2}
+  timeElapsedEvent: {fileID: 11400000, guid: 1ab0e9f6711b10142aa164690cfca207, type: 2}
+  gameOverEvent: {fileID: 11400000, guid: 999fa0e038064ca46b6a3d0434abfe7b, type: 2}
+  countdownEvent: {fileID: 11400000, guid: 51955921707a4584faa15e65332e8802, type: 2}
+--- !u!1 &1147010544151127693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147010544151127690}
+  - component: {fileID: 1147010544151127691}
+  m_Layer: 0
+  m_Name: ZombearSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1147010544151127690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147010544151127693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1147010544024959896}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147010544151127691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147010544151127693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3df3ffd5ca8bfc40a8f9145e5beb7bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 3140761350346685973, guid: 900e7907f99dfc540bd6b691588232e5, type: 3}
+  minSpawnTime: 2
+  maxSpawnTime: 3
+  gameOverEvent: {fileID: 11400000, guid: 999fa0e038064ca46b6a3d0434abfe7b, type: 2}
+  spawnParent: {fileID: 0}
+  spawn: 1
+  spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
